@@ -14,6 +14,10 @@ public class FuelEfficiency {
 
         System.out.print("Enter the fuel efficiency in miles per gallon (example: 25.5): ");
         double milesPerGallon = input.nextDouble();
+        if (milesPerGallon <= 0) {
+            System.out.println("Error: MPG must be greater than zero.");
+            return;
+        }
 
         System.out.print("Enter the price of gas per gallon (example: 4.50): ");
         double pricePerGallon = input.nextDouble();
